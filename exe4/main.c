@@ -11,19 +11,19 @@ int PIN_LED_G = 6;
 volatile int flag_red;
 volatile int flag_green;
 
-volatile int red_state = 0;
-volatile int green_state = 0;
 
 void btn_callback(uint gpio, uint32_t events) {
   if (events == 0x4) { // fall edge
-      flag_red = 1;
+    flag_red = 1;
   }
   else if (events == 0x8) { // rise edge
-      flag_green = 1;
+    flag_green = 1;
   }
 }
 
 int main() {
+  int green_state = 0;
+  int red_state = 0;
   stdio_init_all();
 
   gpio_init(PIN_BTN_R);
