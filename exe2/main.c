@@ -23,7 +23,7 @@ int main() {
   gpio_pull_up(PIN_BTN_R);
   
   gpio_set_irq_enabled_with_callback(
-    PIN_BTN_R, GPIO_IRQ_EDGE_RISE | GPIO_IRQ_EDGE_FALL, true, &btn_callback);
+    PIN_BTN_R, GPIO_IRQ_EDGE_FALL, true, &btn_callback);
     
     
     

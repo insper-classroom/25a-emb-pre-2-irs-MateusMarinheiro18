@@ -30,10 +30,10 @@ int main() {
   if (capture_flag == 1) {
     capture_flag = 0;
     if (btn_flag == 1) {
-      printf("Fall\n");
+      printf("fall\n");
     }
     else if (btn_flag == 0) {
-      printf("Rise\n");
+      printf("rise\n");
     } 
     btn_flag = 2;
 

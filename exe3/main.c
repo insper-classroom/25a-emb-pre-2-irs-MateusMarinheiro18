@@ -38,12 +38,12 @@ int main() {
   while (true) {
     if (flag_red) {
       flag_red = 0;
-      printf("Fall red\n");
+      printf("fall red\n");
     }
 
     if (flag_green) {
       flag_green = 0;
-      printf("Fall \n");
+      printf("fall green\n");
     }
   }
 }
