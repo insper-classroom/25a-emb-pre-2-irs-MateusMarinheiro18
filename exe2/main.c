@@ -14,6 +14,7 @@ void btn_callback(uint gpio, uint32_t events) {
 
 
 int main() {
+  int state =0;
   stdio_init_all();
   
   gpio_init(PIN_LED_R);
@@ -28,7 +29,7 @@ int main() {
     
     
     while (true) {
-    int state =0;
+    
     if (btn_flag == 1) {
       state = !state;
       gpio_put(PIN_LED_R, state);
